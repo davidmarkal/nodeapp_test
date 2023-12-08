@@ -1,11 +1,11 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nodeapp-deployment
+  name: nodeapp-deployment-berubah
   labels:
     app: nodeapp
 spec:
-  replicas: 1
+  replicas: 5
   selector:
     matchLabels:
       app: nodeapp
@@ -16,11 +16,10 @@ spec:
     spec:
       containers:
       - name: nodeserver
-        image: thetips4you/nodeapp:latest
+        image: mcdelivery86/nodeapp:latest
         ports:
         - containerPort: 3000
-        
-        
+
 ---
 
 apiVersion: v1
