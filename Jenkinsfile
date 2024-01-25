@@ -12,7 +12,7 @@ pipeline {
 		steps {
 			script {
 				// Menggunakan perintah checkout dari plugin Git di Jenkins dengan SSH dan kredensial
-				checkout([$class: 'GitSCM', branches: [[name: 'master']], userRemoteConfigs: [[url: 'https://github.com/davidmarkal/nodeapp_test.git']], credentialsId: 'dmarkal'])
+				checkout([$class: 'GitSCM', branches: [[name: 'master']], userRemoteConfigs: [[url: 'git@github.com/davidmarkal/nodeapp_test.git']], credentialsId: 'dmarkal'])
 				
 				// Menampilkan informasi log tambahan
 				echo "Checkout completed successfully."
