@@ -1,6 +1,6 @@
 pipeline {
   environment {
-    dockerImageName = "mcdelivery86/nodeapp"
+    dockerImageName = "devopsindomobil/nodeapp"
     dockerImageTag = "${dockerImageName}:${env.BUILD_ID}"
     dockerImage = ""
   }
