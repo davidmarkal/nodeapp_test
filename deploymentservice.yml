@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: nodeserver
-        image: mcdelivery86/nodeapp:latest
+        image: devopsindomobil/nodeapp:latest
         ports:
         - containerPort: 3000
 
