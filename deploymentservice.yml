@@ -20,6 +20,8 @@ spec:
         image: devopsindomobil/nodeapp:latest
         ports:
         - containerPort: 3000
+      imagePullSecrets:
+        - name: dockerhubsecret
 
 ---
 
