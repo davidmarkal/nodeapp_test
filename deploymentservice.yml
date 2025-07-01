@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nodeapp-deployment-service
-  namespace: default
+  namespace: nodeapp
   labels:
     app: nodeapp
 spec:
@@ -27,7 +27,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: nodeapp-service
-  namespace: default
+  namespace: nodeapp
 spec:
   selector:
     app: nodeapp 
